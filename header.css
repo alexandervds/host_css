@@ -1,0 +1,60 @@
+/* declare vars  */
+:root {
+  --sidebar-totalWidth: 24%;
+  --color-background: #2F3445;
+  --color-text: #A5B1CD;
+  --color-component: #282B38;
+  --color-accent: #111111;
+  --color-POM: #FE6672;
+}
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 20%; /* Set the width of the sidebar */
+  padding: 20px 2% 0px 2%;
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: var(--color-component);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  border-color: var(--color-accent) ;
+  border: 3px;
+  border-style: none outset none none;
+}
+
+/* Style page content */
+.main {
+  margin-left: var(--sidebar-totalWidth); /* Same as the width of the sidebar */
+  padding-left: 10px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 76%;
+  background-color: var(--color-background);
+  position: absolute;
+  
+}
+
+.main p {
+ color: var(--color-text);
+}
+
+.figBox{
+ width: 48%;
+ height: 80%;
+ padding-right: 1%;
+ float: left;
+ border: 0px;
+ border-color: var(--color-POM);
+ border-style: outset;
+}
+
+.dash-graph{
+ height: 100%;
+}
+
+.dash-spreadsheet-container table {
+ background-color: #FFFFFF;
+}
